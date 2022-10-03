@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Koala</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/plumpy/24/000000/koala.png"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+      }
+      .text {
+        grid-row: 2;
+      }
+      .image {
+        border-radius: 10px;
+        grid-row: 2;
+      }
+      /* div {
+        display: flex;
+        box-shadow: 0 0 50px #ccc;
+        margin: 3em;
+      }
+      .text {
+        width: 70vw;
+        flex-direction: column;
+        padding: 3em;
+      }
+      p {
+        width: 30em;
+        padding: 1em 0 1em 0;
+      }
+      img:hover {
+        transform: scaleX(-1);
+      }
+      li {
+        list-style: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="text">
+        <h1>Koala</h1>
+        <p>
+          The koala or, inaccurately, koala bear is an arboreal herbivorous
+          marsupial native to Australia. It is the only extant representative of
+          the family Phascolarctidae and its closest living relatives are the
+          wombats.
+          <a href="https://en.wikipedia.org/wiki/Koala">Wikipedia</a>
+        </p>
+        <ul>
+          <li><strong>Scientific name:</strong> Phascolarctos cinereus</li>
+          <li><strong>Lifespan:</strong> 13 – 18 years (In the wild)</li>
+          <li><strong>Length:</strong> 60 – 85 cm (Adult)</li>
+          <li><strong>Mass:</strong> 4 – 15 kg (Adult)</li>
+          <li><strong>Trophic level:</strong> Herbivorous</li>
+          <li><strong>Family:</strong> Phascolarctidae</li>
+          <li><strong>Kingdom:</strong> Animalia</li>
+        </ul>
+        <p style="font-size: 0.8em">
+          <em>The word koala comes from the Dharug gula, meaning no water.</em>
+          Although the vowel 'u' was originally written in the English
+          orthography as "oo" (in spellings such as coola or koolah — two
+          syllables), later became "oa" and is now pronounced in three
+          syllables, possibly in error.<sup>[4]</sup>
+        </p>
+      </div>
+      <div class="image">
+        <img
+          src="https://images.pexels.com/photos/532543/pexels-photo-532543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="koala"
+        />
+      </div>
+    </div>
+  </body>
+</html>
