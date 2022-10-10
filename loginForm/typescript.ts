@@ -15,6 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 let submitButton = document.querySelector('.submit');
+let username = document.querySelector('.username');
+let password = document.querySelector('.password');
 submitButton?.addEventListener('click', () => {
-  alert('Login Successful');
+  if (username.value != ' ' && password.value != ' ') {
+    alert('Login Successful');
+  } else {
+    alert('Please Enter Username and Password');
+  }
 });
