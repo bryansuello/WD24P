@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>invoice form</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./dist/sass.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="./dist/typescript.js" defer></script>
+  </head>
+  <body>
+    <div id="animation">
+      <!-- HEADER -->
+      <header>
+        <img src="./images/bryansuello-logo.png" alt="logo" />
+        <div>
+          <label for="dark-mode">Dark</label>
+          <input type="radio" name="mode" id="dark-mode" checked />
+          <label for="light-mode">Light</label>
+          <input type="radio" name="mode" id="light-mode" />
+        </div>
+      </header>
+
+      <!-- FORM -->
+      <main>
+        <form
+          action="https://formsubmit.co/5e9502d4ca4313c7f296c8cae460f9b9"
+          method="POST"
+        >
+          <fieldset>
+            <legend>Invoice Details</legend>
+            <div>
+              <label for="">Invoice To: </label>
+              <input type="text" size="51" id="invoice_to" required />
+            </div>
+            <div>
+              <label style="width: 5em">Contact #:</label>
+              <input type="text" id="contact_number" required />
+              <label>&nbsp;&nbsp;&nbsp; Date:</label>
+              <input type="date" value="2022-09-12" id="date" required />
+            </div>
+          </fieldset>
+        </form>
+
+        <table>
+          <tr>
+            <th>Item Description</th>
+            <th>Qty</th>
+            <th>Unit Price</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+            <td>
+              <textarea
+                cols="100"
+                rows="1"
+                maxlength="100"
+                name="description"
+                placeholder="Enter item here..."
+              ></textarea>
+            </td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>
+              <textarea
+                cols="100"
+                rows="1"
+                maxlength="100"
+                placeholder="Enter item here..."
+              ></textarea>
+            </td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>
+              <textarea
+                cols="100"
+                rows="1"
+                maxlength="100"
+                placeholder="Enter item here..."
+              ></textarea>
+            </td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>
+              <textarea
+                cols="100"
+                rows="1"
+                maxlength="100"
+                placeholder="Enter item here..."
+              ></textarea>
+            </td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="text-align: right; padding-right: 1em">
+              Sub Total :
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="3" style="text-align: right; padding-right: 1em">
+              VAT :
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td
+              class="total"
+              colspan="3"
+              style="text-align: right; padding-right: 1em"
+            >
+              Total :
+            </td>
+            <td></td>
+          </tr>
+        </table>
+
+        <form>
+          <fieldset>
+            <legend>Additional Details</legend>
+            <div>
+              <label>Payment Method </label>
+              &nbsp;
+              <select name="payment-method" id="payment-method">
+                <option value="">-Select Payment Method-</option>
+                <option value="">Paymaya</option>
+                <option value="">Gcash</option>
+                <option value="">Credit Card</option>
+                <option value="">Paypal</option>
+              </select>
+            </div>
+            <div>
+              <input type="radio" name="location" /><label>Home </label
+              >&nbsp;&nbsp;<input type="radio" name="location" checked /><label
+                >Office</label
+              >
+            </div>
+            <textarea
+              name="text-area"
+              id="text-area"
+              cols="80"
+              rows="10"
+              maxlength="500"
+              placeholder=" Enter text here..."
+              required
+            ></textarea>
+          </fieldset>
+          <button type="submit" value="send" onclick="messageSent()">
+            Submit
+          </button>
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_subject" value="New Form Sent" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
